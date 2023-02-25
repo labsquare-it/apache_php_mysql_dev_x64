@@ -2,8 +2,8 @@
 Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
 
 ### Che cos'è
-**apache_php_mysql_dev** è un'applicazione Docker multi-contenitore che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin* già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL.<br><br>
-PS. [Docker Compose](https://docs.docker.com/compose/) è uno strumento per la definizione e l’esecuzione di *applicazioni Docker multi-contenitore*.
+**apache_php_mysql_dev** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup> che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin* già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL.<br><br>
+<sup>1</sup> [Docker Compose](https://docs.docker.com/compose/) è uno strumento per la definizione e l’esecuzione di *applicazioni Docker multi-contenitore*.
 
 ### Struttura del progetto
 <pre>
