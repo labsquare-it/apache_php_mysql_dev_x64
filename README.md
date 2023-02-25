@@ -32,7 +32,9 @@ Una volta scaricato il progetto:
 > localhost:8080/test.php
 5) Per accedere a MySQL apri phpMyAdmin all'indirizzo:<br>
 > localhost:8081<br>
+
 utizzando le credenziali seguenti:<br>
+
 > username: root<br>
 > password: 1234
 
