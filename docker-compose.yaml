@@ -1,0 +1,51 @@
+version: '3.9'
+
+services:
+  web:
+    container_name: Apache-PHP
+    image: webdevops/php-apache-dev:8.2-alpine
+    depends_on:
+      - db
+    build: 
+      dockerfile: Dockerfile
+    restart: always 
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./www:/app
+    networks:
+      - lamp-docker
+
+  db:
+    container_name: DBMS-mysql
+    image: mysql:8.0.32
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    networks:
+      - lamp-docker
+
+  phpmyadmin:
+    container_name: PhpMyAdmin
+    image: phpmyadmin:latest
+    depends_on:
+      - db
+      - web
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    networks:
+      - lamp-docker
+
+networks:
+  lamp-docker:
+    driver: bridge
