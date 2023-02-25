@@ -20,7 +20,7 @@ Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
 
 - **mysql_data** è la directory del host montata nel container di Docker per realizzare la persistenza sul host dei database di MySQL.<br>
 - **www** è la directory del host montata sulla directory root delle pagine web gestite dal webserver Apache del container docker per realizzare la persistenza delle pagine PHP del progetto sul host e, allo stesso tempo, per rendere più semplice la loro gestione.<br>
-- La directory **php_config** contiene il file php.ini in cui è possibile modificare la configurazione di PHP.<br>
+- La directory **php_config** contiene il file php.ini in cui è possibile apportare modifiche alla configurazione di PHP.<br>
 
 ### Installazione ed esecuzione con Docker Compose
 Una volta scaricato il progetto:
