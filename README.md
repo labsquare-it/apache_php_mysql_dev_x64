@@ -26,7 +26,8 @@ Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
 Una volta scaricato il progetto:
 1) Installare il docker engine o, per semplicità se si utilizza Windows o macOS, installare [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2) Avviare docker engine o Docker Desktop.
-3) Digitare con il terminale nella cartella del progetto **apache_php_dev** scaricato, il comando seguente: *docker-compose up*
+3) Digitare con il terminale nella cartella del progetto **apache_php_dev** scaricato, il comando seguente:<br>
+> docker-compose up
 
 Le pagine web PHP del progetto devono essere create nella cartella *www* e possono essere visualizzate nel browser all'inidirizzo *localhost:8080*. La gestione dei database di MySQL può essere fatta utilizzando *phpMyAdmin* che può essere aperto all'indirizzo *localhost:8081*.
 
