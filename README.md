@@ -28,6 +28,13 @@ Una volta scaricato il progetto:
 2) Avviare docker engine o Docker Desktop.
 3) Digitare con il terminale nella cartella del progetto **apache_php_dev** scaricato, il comando seguente:<br>
 > docker-compose up
+4) Per controllare il corretto funzionamento dell'ambiente apri il browser e apri la pagina di test raggiungibile all'indirizzo:<br>
+> localhost:8080/test.php
+5) Per accedere a MySQL apri phpMyAdmin all'indirizzo:<br>
+> localhost:8081
+utizzando le credenziali seguenti;
+> username: root<br>
+> password: 1234
 
 Le pagine web PHP del progetto devono essere create nella cartella *www* e possono essere visualizzate nel browser all'inidirizzo *localhost:8080*. La gestione dei database di MySQL può essere fatta utilizzando *phpMyAdmin* che può essere aperto all'indirizzo *localhost:8081*.
 
