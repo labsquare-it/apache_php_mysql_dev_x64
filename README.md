@@ -22,7 +22,7 @@ Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
 - **www** è la directory del host che è stata montata sulla directory root delle pagine web gestite dal webserver Apache del container docker per realizzare la persistenza delle pagine PHP del progetto sul host e, allo stesso tempo, per rendere più semplice la loro gestione.<br>
 - La directory **php_config** contiene il file php.ini in cui è possibile modificare la configurazione di PHP.<br>
 
-### Installazione ed esecuzione con Docker compose
+### Installazione ed esecuzione con Docker Compose
 Una volta scaricato il progetto:
 1) Installare il docker engine o, per semplicità se si utilizza Windows o macOS, installare [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2) Avviare docker engine o Docker Desktop.
@@ -51,3 +51,7 @@ PhpMyAdmin:
         username: root
         password: 1234
 </pre>
+
+Enjoy!
+
+Luigi Menchise
