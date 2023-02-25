@@ -30,7 +30,7 @@ Una volta scaricato il progetto:
 > docker-compose up
 4) Per controllare il corretto funzionamento dell'ambiente apri il browser e apri la pagina di test raggiungibile all'indirizzo:<br>
 > localhost:8080/test.php
-5) Per accedere a MySQL apri phpMyAdmin all'indirizzo:<br>
+5) Per accedere a MySQL apri il client web *phpMyAdmin* all'indirizzo:<br>
 > localhost:8081<br>
 
 utizzando le credenziali seguenti:<br>
