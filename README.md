@@ -28,7 +28,7 @@ Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
 *P.S. Il nome della cartella principale può essere cambiato.*<br>
 1) Installa il *docker engine* o, per semplicità se utilizzi Windows o macOS, installa [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2) Avvia il docker engine o Docker Desktop.
-3) Digita il comando seguente utilizzando il terminale all'interno della cartella principale che hai estratto (tale cartella contiene il file *docker-compose.yaml*:<br>
+3) Digita il comando seguente utilizzando il terminale all'interno della cartella principale che hai estratto (tale cartella contiene il file *docker-compose.yaml*):<br>
 > docker-compose up
 4) Per controllare il corretto funzionamento dell'ambiente apri il browser e richiedi la pagina php di test raggiungibile all'indirizzo:<br>
 > localhost:8080/test.php
