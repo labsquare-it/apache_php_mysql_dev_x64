@@ -23,12 +23,14 @@ Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
 - La directory **php_config** contiene il file php.ini in cui è possibile apportare modifiche alla configurazione di PHP.<br>
 
 ### Installazione ed esecuzione con Docker Compose
-Una volta scaricato il progetto:
-1) Installare il docker engine o, per semplicità se si utilizza Windows o macOS, installare [Docker Desktop](https://www.docker.com/products/docker-desktop/).
-2) Avviare docker engine o Docker Desktop.
-3) Digitare con il terminale nella cartella del progetto **apache_php_dev** scaricato, il comando seguente:<br>
+1) Scarica la cartella compressa del progetto cliccando sul bottone *Code* e poi sulla voce *Download ZIP*.<br>
+2) Estrai sul tuo computer il contenuto della cartella che hai scaricato.<br>
+*P.S. Il nome della cartella principale può essere cambiato.*<br>
+1) Installa il *docker engine* o, per semplicità se utilizzi Windows o macOS, installa [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+2) Avvia il docker engine o Docker Desktop.
+3) Digita il comando seguente nel terminale all'interno della cartella che hai estrtto:<br>
 > docker-compose up
-4) Per controllare il corretto funzionamento dell'ambiente apri il browser e apri la pagina di test raggiungibile all'indirizzo:<br>
+4) Per controllare il corretto funzionamento dell'ambiente apri il browser e richiedi la pagina php di test raggiungibile all'indirizzo:<br>
 > localhost:8080/test.php
 5) Per accedere a MySQL apri il client web *phpMyAdmin* all'indirizzo:<br>
 > localhost:8081<br>
@@ -38,7 +40,8 @@ utizzando le credenziali seguenti:<br>
 > username: root<br>
 > password: 1234
 
-Le pagine web PHP del progetto devono essere create nella cartella *www* e possono essere visualizzate nel browser all'inidirizzo *localhost:8080*. La gestione dei database di MySQL può essere fatta utilizzando *phpMyAdmin* che può essere aperto all'indirizzo *localhost:8081*.
+Le pagine web dei tuoi progetti PHP devono essere create nella cartella *www* e possono essere visualizzate nel browser all'inidirizzo *localhost:8080*.<br>
+La gestione dei database di MySQL puoi farla utilizzando *phpMyAdmin* raggiungibile all'indirizzo *localhost:8081*.
 
 ### Versioni, IP address, porte e credenziali di accesso
 <pre>
