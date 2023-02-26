@@ -15,7 +15,7 @@
 
         print("<h1>Test query</h1>");
         $user = $conn->query("SELECT User FROM user");
-        echo "<h2> Tabella User:</h2>";
+        echo "<h2> Elenco degli utenti:</h2>";
         while($record = $user->fetch_assoc()) {
             $u = $record['User'];
             echo "$u <br>";
