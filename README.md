@@ -2,7 +2,7 @@
 Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per le architetture x86.
 
 ### Che cos'è
-**apache_php_mysql_dev_x86** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup> che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin* già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL.<br><br>
+**apache_php_mysql_dev_x86** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup>, che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin*, già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL, per le architetture x86.<br><br>
 <sup>1</sup> [Docker Compose](https://docs.docker.com/compose/) è uno strumento per la definizione e l’esecuzione di *applicazioni Docker multi-contenitore*.
 
 ### Struttura del progetto
@@ -18,30 +18,30 @@ Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per le architetture
 |-README.md
 </pre>
 
-- **mysql_data** è la directory del host montata nel container di Docker per realizzare la persistenza sul host dei database di MySQL.<br>
-- **www** è la directory del host montata sulla directory root delle pagine web gestite dal webserver Apache del container docker per realizzare la persistenza delle pagine PHP del progetto sul host e, allo stesso tempo, per rendere più semplice la loro gestione.<br>
-- La directory **php_config** contiene il file php.ini in cui è possibile apportare modifiche alla configurazione di PHP.<br>
+- **mysql_data** è la directory del host montata nel docker-container, per realizzare la persistenza dei database di MySQL sul host.<br>
+- **www** è la directory del host montata sulla root-directory delle pagine web gestite da Apache sul docker-container, per realizzare la persistenza delle pagine PHP del progetto sul host e, allo stesso tempo, per rendere più semplice la loro gestione.<br>
+- La directory **php_config** contiene il file *php.ini* in cui è possibile apportare modifiche alla configurazione di PHP.<br><br>
+*P.S. Le cartelle **mysql_data** e **www** saranno create automaticamente da Docker Compose durante la creazione dei docker-container.*<br>
 
-### Installazione ed esecuzione con Docker Compose
+### Creazione dei docker-container ed esecuzione con Docker Compose
 1) Scarica la cartella compressa del progetto cliccando sul bottone *Code* e poi sulla voce *Download ZIP*.<br>
-2) Estrai sul tuo computer il contenuto della cartella che hai scaricato.<br>
+2) Estrai sul disco del tuo computer il contenuto della cartella compressa che hai scaricato.<br>
 *P.S. Il nome della cartella principale può essere cambiato.*<br>
 1) Installa il *docker engine* o, per semplicità se utilizzi Windows o macOS, installa [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2) Avvia il docker engine o Docker Desktop.
-3) Digita il comando seguente utilizzando il terminale all'interno della cartella principale che hai estratto (tale cartella contiene il file *docker-compose.yaml*):<br>
-> docker-compose up
-4) Per controllare il corretto funzionamento dell'ambiente apri il browser e richiedi la pagina php di test raggiungibile all'indirizzo:<br>
-> localhost:8080/test.php
-5) Per accedere a MySQL apri il client web *phpMyAdmin* all'indirizzo:<br>
-> localhost:8081<br>
+3) Digita il comando seguente, utilizzando il terminale all'interno della cartella principale che hai estratto (la cartella che contiene il file *docker-compose.yaml*):<br>
+> **docker-compose up**
+4) Per controllare il corretto funzionamento dell'ambiente, apri il browser e richiedi la pagina php di test all'indirizzo:<br>
+> **localhost:8080/test.php**
+5) Per accedere a MySQL, apri il client web *phpMyAdmin* all'indirizzo:<br>
+> **localhost:8081**<br>
 
-utizzando le credenziali seguenti:<br>
+e utilizza le credenziali seguenti:<br>
 
 > username: root<br>
-> password: 1234
+> password: 1234<br>
 
-Le pagine web dei tuoi progetti PHP devono essere create nella cartella *www* e possono essere visualizzate nel browser all'inidirizzo *localhost:8080*.<br>
-La gestione dei database di MySQL puoi farla utilizzando *phpMyAdmin* raggiungibile all'indirizzo *localhost:8081*.
+*PS. Le pagine web dei progetti PHP possono essere create sul host nella cartella __www__ e possono essere visualizzate nel browser all'inidirizzo __localhost:8080__. La gestione dei database di MySQL può essere fatta utilizzando __phpMyAdmin__ raggiungibile all'indirizzo __localhost:8081__.*
 
 ### Versioni, IP address, porte e credenziali di accesso
 <pre>
