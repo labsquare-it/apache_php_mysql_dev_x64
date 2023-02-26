@@ -1,5 +1,5 @@
 # apache_php_mysql_dev
-Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose
+Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per l'architettura x86
 
 ### Che cos'è
 **apache_php_mysql_dev** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup> che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin* già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL.<br><br>
@@ -49,7 +49,7 @@ Web server:
     PHP ver. 8.2.1
     Apache ver. 2.4.54 (Debian):
         IP address: localhost:8080
-        Root directory: www
+        Root web directory: www (sul computer host)
         
 DBMS:    
     MySQL Community Server - GPL ver. 8.0.32:
