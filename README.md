@@ -1,4 +1,4 @@
-# apache_php_mysql_dev
+# apache_php_mysql_dev_x86
 Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per l'architettura x86
 
 ### Che cos'è
