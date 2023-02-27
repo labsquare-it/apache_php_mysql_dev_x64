@@ -1,5 +1,5 @@
 # apache_php_mysql_dev_x64
-Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per le architetture x86.
+Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per le architetture x64.
 
 ### Che cos'è
 **apache_php_mysql_dev_x64** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup>, che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin*, già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL, per le architetture x64.<br><br>
