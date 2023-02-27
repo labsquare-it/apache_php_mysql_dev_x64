@@ -64,6 +64,7 @@ DBMS:
             username: root
             password: 1234
         Port: 3306
+        Directory dei database: mysql_data (sul computer host)
 
 PhpMyAdmin:
     IP address: localhost:8081
