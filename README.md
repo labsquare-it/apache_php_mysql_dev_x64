@@ -1,8 +1,8 @@
-# apache_php_mysql_dev_x86
+# apache_php_mysql_dev_x64
 Ambiente di sviluppo web Apache-PHP-MySql con Docker Compose per le architetture x86.
 
 ### Che cos'è
-**apache_php_mysql_dev_x86** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup>, che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin*, già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL, per le architetture x86.<br><br>
+**apache_php_mysql_dev_x64** è un'applicazione Docker multi-contenitore realizzata con *Docker Compose*<sup>1</sup>, che mette a disposizione un ambiente di sviluppo con *Apache*, *PHP*, *MySQL* e *phpMyAdmin*, già configurati e pronti all'uso per lo sviluppo di applicazioni web con PHP e database di MySQL, per le architetture x64.<br><br>
 <sup>1</sup> [Docker Compose](https://docs.docker.com/compose/) è uno strumento per la definizione e l’esecuzione di *applicazioni Docker multi-contenitore*.
 
 ### Struttura del progetto
@@ -41,7 +41,14 @@ e utilizza le credenziali seguenti:<br>
 > username: root<br>
 > password: 1234<br>
 
-*PS. Le pagine web dei progetti PHP possono essere create sul host nella cartella __www__ e possono essere visualizzate nel browser all'inidirizzo __localhost:8080__. La gestione dei database di MySQL può essere fatta utilizzando __phpMyAdmin__ raggiungibile all'indirizzo __localhost:8081__.*
+*P.S. Le pagine web dei progetti PHP possono essere create sul host nella cartella __www__ e possono essere visualizzate nel browser all'indirizzo __localhost:8080__. La gestione dei database di MySQL può essere fatta utilizzando __phpMyAdmin__ raggiungibile all'indirizzo __localhost:8081__.*
+
+### Accensione e spegnimento dei docker-container
+Dopo la creazione dei docker-container, esegui i comandi seguenti per, rispettivamente, avviare e terminare la loro l'esecuzione:<br>
+> **docker-compose start**<br>
+> **docker-compose stop**<br>
+
+*P.S. I comandi devono essere eseguiti con il terminale nella cartella principale del progetto. Prima dell'avvio dei docker-container, ovviamente ricordati che è neccessario avviare l'engine di Docker sul host.*<br>
 
 ### Versioni, IP address, porte e credenziali di accesso
 <pre>
